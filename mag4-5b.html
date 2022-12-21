@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mag4-5b.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+        .par1 [for="title"]{
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-weight: 800;
+            font-style: italic;
+        }
+        .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+
+        .par1 span[for="name"]{
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        .material-icons.orange600 { color: #FB8C00; }
+
+        /*  *  check wheter contains */
+        .pseudo a[href*="guvi"]{
+            color: red;
+        }
+
+        /*  ^  check for starts */
+        .pseudo a[href^="four"]{
+            color: rgb(217, 46, 174);
+        }
+
+        /*  $  check for end */
+        .pseudo a[href$="in"]{
+            color: rgb(100, 217, 46);
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Intro to pseudo-classes (link,visited,hover,active)</li>
+        <li>css attributes element working</li>
+        <li>Flex - display, direction, wrap, flex-flow , justify-content, align-items,align-content</li>
+        <li>parent inherit </li>
+        <li>gradient</li>
+        <li>overflow - hidden, scroll, auto, visible</li>
+        <li>measurements </li>
+        <li>fonts </li>
+        <li>icons </li>
+        <li>radio</li>
+        <li>checkbox</li>
+        <li>media query</li>
+        <li>dropbox</li>
+        
+    </ul>
+    <br>
+    <hr>
+    <h3>Pseudo Classes</h3>
+    <ul>
+        <li>link</li>
+        <li>visited</li>
+        <li>hover</li>
+        <li>active</li>
+    </ul>
+    <div class="pseudo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repudiandae!</p>
+        <a href="https://www.guvi.com">GUVI</a>
+        <a href="https://www.google.com">Google</a>
+        <a href="four/index.html">four index</a>
+        <a href="https://www.google.in">Google</a>
+        <a href="in">Google - IN</a>
+        <br>
+        <button>Submit</button>
+        <br>
+        <br>
+        <input type="text" placeholder="Enter your Name">
+    </div>
+    <br>
+    <hr>
+    
+    <h3>Attribute selector</h3>
+    <div class="something">
+        <div class="par1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores <label for="name">new data</label> facilis necessitatibus delectus repudiandae. Eveniet, <label for="title">Selected data 2</label> corporis numquam eaque iure <span for="name">new data 1</span> ducimus sapiente nihil magni expedita illum! Explicabo quidem aliquid voluptatum iusto qui.
+        </div>
+        <div class="par3">
+            <div class="var1">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur maiores error quidem optio mollitia <label for="title">Selected data 3</label> nesciunt nihil amet, perspiciatis 
+                    <span for="name">new data 2</span> voluptatibus tempore ullam, harum a porro cupiditate placeat alias officia dicta. Fugit?</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <h3>Flex Box</h3>
+    <ul>
+        <li>parent should have display: flex</li>
+        <li>by defalut arrange the container in rows</li>
+        <li>child  will not over flow parent</li>
+    </ul>
+    <br>
+    <ul>
+        <li>display</li>
+        <li>direction</li>
+        <li>wrap</li>
+        <li>flex-flow shortand - direction  wrap</li>
+        <li>justify-content</li>
+        <li>align-items</li>
+        <li>align-content</li>
+    </ul>
+
+    <div class="new-para1">
+        <div class="new-common-child">1</div>
+        <div class="new-common-child">2</div>
+        <div class="new-common-child">3</div>
+        <div class="new-common-child">4</div>
+        <div class="new-common-child">5</div>
+        <div class="new-common-child">6</div>
+        <div class="new-common-child">2</div>
+        <div class="new-common-child">3</div>
+        <div class="new-common-child">4</div>
+        <div class="new-common-child">5</div>
+        <div class="new-common-child">6</div>
+        <div class="new-common-child">2</div>
+        <div class="new-common-child">3</div>
+        <div class="new-common-child">4</div>
+        <div class="new-common-child">5</div>
+        <div class="new-common-child">6</div>
+        <div class="new-common-child">2</div>
+        <div class="new-common-child">3</div>
+        <div class="new-common-child">4</div>
+        <div class="new-common-child">5</div>
+        <div class="new-common-child">6</div>
+        <div class="new-common-child">2</div>
+        <div class="new-common-child">3</div>
+        <div class="new-common-child">4</div>
+        <div class="new-common-child">5</div>
+        <div class="new-common-child">6</div>
+        <div class="new-common-child">4</div>
+        <div class="new-common-child">5</div>
+        <div class="new-common-child">6</div>
+        <div class="new-common-child">2</div>
+        <div class="new-common-child">3</div>
+        <div class="new-common-child">4</div>
+        <div class="new-common-child">5</div>
+        <div class="new-common-child">6</div>
+        <div class="new-common-child">2</div>
+        <div class="new-common-child">3</div>
+        <div class="new-common-child">4</div>
+        <div class="new-common-child">5</div>
+        <div class="new-common-child">6</div>
+        <div class="new-common-child">2</div>
+        <div class="new-common-child">3</div>
+        <div class="new-common-child">4</div>
+        <div class="new-common-child">5</div>
+        <div class="new-common-child">6</div>
+        
+    <br>
+    <br>
+
+    </div>
+
+    <div class="parent-two">
+        <div class="new-common-child1">1</div>
+        <div class="new-common-child1">2</div>
+        <div class="new-common-child1">3</div>
+        <div class="new-common-child1">4</div>
+    </div>
+    <br>
+    <hr>
+    <h3>Gradient</h3>
+    <ul>
+        <li>have to use attribute background image</li>
+    </ul>
+    
+    <div class="gradient">
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <h3>Overflow</h3>
+    <div class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iusto dictdam a quidem quisaspernatur.</p>
+    </div>
+    <br>
+    <hr>
+    <p>measurements</p>
+    <ul>
+        <li>px</li>
+        <li>% - inherit from parent</li>
+        <li>vh - 1 to 1% from viewport</li>
+        <li>rem - 1 rem to 16px</li>
+
+    </ul>
+    <br>
+    <hr>
+    <h3>Fonts</h3>
+    <ul>
+        <li>sans-serif </li>
+        <li>serif</li>
+        <li>monotone</li>
+    </ul>
+    <span class="material-icons md-dark">&#xE87C;</span>
+    <span class="material-icons">cloud</span>
+    <span class="material-icons orange600">computer</span>
+    <span class="material-icons orange600">face</span>
+
+    <br>
+    <hr>
+    <h3>radio & checkbox</h3>
+    <p for="question1">Who is Indias President</p>
+    <label for="">option1</label><input type="radio" name="president">
+    <label for="">option2</label><input type="radio" name="president">
+    <label for="">option3</label><input type="radio" name="president1">
+
+    <br>
+    <p for="question1">Checklist for all projects</p>
+    <label for="">project1</label><input type="checkbox" name="president"><br>
+    <label for="">project2</label><input type="checkbox" name="president"><br>
+    <label for="">project3</label><input type="checkbox" name="president1">
+
+    <br>
+    <br>
+    <section>
+        <label for="">selection</label>
+        <select name="" id="">Select one
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+        </select>
+    </section>
+
+    <br>
+    <br>
+    <br>
+</body>
+</html>

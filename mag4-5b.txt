@@ -1,0 +1,30 @@
+a = [1,2,3,4]
+// map - 
+// 1. data manipluation
+// 2. lenght of array does not change
+// 3. function 
+//     1. fun takes one parameter ata time
+//     2. manipluation
+//     3. function must retrun the value
+
+console.log(a.map((i)=>i*2));
+
+
+a = [1,2,3,4]
+// filter - 
+// 1. condition check 
+// 2. if the condition is true the same element we get out in array
+// 2. lenght of array will change depend on the condition
+// 3. function 
+//     1. fun takes one parameter at a time
+//     2. conditon check
+//     3. function must retrun the value if condition is true
+
+if (5){
+    console.log(1);
+}else{
+    console.log(2);
+}
+
+1. apart from 0 or false or null or undefined = > false
+2. will be considered as true

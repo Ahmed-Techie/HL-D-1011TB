@@ -1,0 +1,124 @@
+/*  link */
+.pseudo a:link{
+    display: block;
+    /* text-decoration: none; */
+    /* color: red; */
+}
+
+.pseudo a{
+    display: block;
+    /* text-decoration: none; */      
+    /* color: red; */
+}
+
+/* visiting a link */
+.pseudo a:visited{
+    display: block;
+    text-decoration: none;
+    color: rgb(72, 255, 0);
+}
+
+/* whenever we are hovering with mouse */
+.pseudo button:hover{
+    display: block;
+    text-decoration: none;
+    color: rgb(72, 255, 0);
+}
+
+
+.pseudo p:hover{
+    display: block;
+    text-decoration: none;
+    color: rgb(72, 255, 0);
+}
+
+
+.pseudo button:active{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 77, 0);
+}
+
+.pseudo input:active{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 77, 0);
+}
+
+
+/* FLEX BOX */
+.new-para1{
+    width: auto;
+    height: auto;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.new-common-child{
+    width: 50px;
+    height: 30px;
+    background-color: blueviolet;
+    margin: 10px;
+}
+
+.new-common-child1{
+    border: inherit;
+    width: 50px;
+    height: 30px;
+    background-color: blueviolet;
+    margin: 10px 10px 10px 10px;
+}
+
+.parent-two{
+    margin: 50px;
+    height: 150px;
+    width: auto;
+    background-color: blue;
+    display: flex;
+    /* flex-flow: row wrap; */
+    /* flex-wrap:wrap ; */
+    /* justify-content for row wise (horizontally) data chainging */
+    /* equal space b/w container */
+
+    /* justify-content: space-between;  */
+    /* equal space for all container */
+    /* justify-content: space-evenly;  */
+    /* justify-content:flex-end; */
+    justify-content: center;
+
+    /* align-items for column wise (vertical) data chainging */
+    align-items: center;
+    /* align-items:flex-start;
+    align-items:flex-end; */
+    /* border-bottom: ;
+    border-top: ; */
+    /* b-style: ;
+    border-color: ; */
+    border: 2px solid red;
+    /* align-content: space-between; */
+
+}
+
+.gradient{
+    height: 200px;
+    width: 500px;
+    /* direction -> to right, to left, bottom , top */
+    /* background-image: linear-gradient(direction,color1,color2,color3); */
+    background-image: linear-gradient(to right,red,yellow);
+    background-image: linear-gradient(to bottom,red,yellow);
+    background-image: linear-gradient(to bottom,orange,white,green);
+    background-image: radial-gradient(orange,white,rgb(124, 128, 0));
+    background-image: conic-gradient(orange,white,green);
+}
+
+.overflow{
+    height: 200px;
+    width: 100px;
+    border: 3px solid rebeccapurple;
+    /* overflow: visible;
+    overflow: hidden; */
+    overflow: scroll;
+    overflow: auto;
+}
